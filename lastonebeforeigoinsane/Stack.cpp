@@ -40,6 +40,7 @@ void cleanStack(Stack* s)
 {
 	s->size = 0;
 	clean(&(s->data));
+	delete s;
 }
 /*check is empty
 input: stack
